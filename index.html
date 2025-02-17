@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMMUT CGPA CALCULATOR</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <img src="college.jpg" alt="college logo" class="styled-image">
+        <h1>MMMUT CGPA Calculator</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>Marks</th>
+                    <th>Credits</th>
+                    <th>Grade Point</th> <!-- Updated -->
+                    <th>Grade</th> <!-- Updated -->
+                </tr>
+            </thead>
+            <tbody id="subjects">
+                <tr>
+                    <td><input type="text" class="subject-name" placeholder="Enter subject name"></td>
+                    <td><input type="number" class="marks" min="0" max="100"></td>
+                    <td><input type="number" class="credits" min="1" max="5"></td>
+                    <td class="grade-point"></td>
+                    <td class="grade"></td>
+                </tr>
+            </tbody>
+        </table>        
+        <div class="actions">
+            <div class="subject-control">
+                <button class="icon-button" onclick="removeLastRow()">-</button>
+                <span>Subject</span>
+                <button class="icon-button" onclick="addRow()">+</button>
+            </div>
+            <button class="calculate-button" onclick="calculateCGPA()">Calculate</button>
+        </div>
+        <div class="result" id="result"></div>
+        <p><b>Note:-</b>If you have back then not allowed to calculate your cgpa!!</p>
+        <p>Copyright © 2025  | All Rights Reserved</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
